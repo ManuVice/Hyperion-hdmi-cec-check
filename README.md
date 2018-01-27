@@ -13,7 +13,7 @@ Checks HDMI CEC signal to start/stop Hyperion service
 ## Install:
 
 - You have to create or change a "hyperion.service" in /etc/systemd/system/  
-
+```
   [Unit]
   Description=Hyperion ambient light systemd service  
 
@@ -23,15 +23,15 @@ Checks HDMI CEC signal to start/stop Hyperion service
 
   [Install]  
   WantedBy=multi-user.target
-  
+```  
 - Register it:  
-    sudo systemctl enable hyperion.service  
+``` sudo systemctl enable hyperion.service ```  
     
 ## Optional:
 
 - start this script on boot  
 - create hyperion-hdmi-cec-check.service in /etc/systemd/system/  
-
+```
   [Unit]
   Description=HDMI CEC Check  
   After=network.target
@@ -45,6 +45,6 @@ Checks HDMI CEC signal to start/stop Hyperion service
   
   [Install]  
   WantedBy=multi-user.target
-  
+```  
 - register it:  
-  sudo systemctl enable hyperion-hdmi-cec-check.service
+```  sudo systemctl enable hyperion-hdmi-cec-check.service ```
