@@ -33,7 +33,7 @@ Checks HDMI CEC signal to start/stop Hyperion service
 - create hyperion-hdmi-cec-check.service in /etc/systemd/system/  
 
   [Unit]
-  Description=HDMI CEC Check
+  Description=HDMI CEC Check  
   After=network.target
 
   [Service]  
