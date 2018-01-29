@@ -22,6 +22,7 @@ while :; do
           if $(systemctl -q is-active hyperion.service)
       then
          echo "Hyperion is running - stop it!"
+         sleep 15 #give Hyperion some time to disable lights
          eval sudo systemctl stop hyperion.service
          sleep 1
          killall hyperiond
@@ -38,7 +39,7 @@ while :; do
       else
          echo "Hyperion isn't running - start it!"
          killall hyperiond
-         sleep 1
+         sleep 5 #wait some time get an image. <-- You can change or comment this out if you dont want it!!!
          eval sudo systemctl start hyperion.service
          sleep 1
       fi
