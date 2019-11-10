@@ -5,7 +5,7 @@
 # Tested with Hyperion.ng #e438bc6 (https://github.com/hyperion-project/hyperion.ng) and Raspbian Stretch
 
 # Please enter time in seconds
-CheckTime=15 #How often should it check if TV and/or Hyperion is running? Standard 15 (Personally I've set it to 60)
+CheckTime=30 #How often should it check if TV and/or Hyperion is running? Standard 15 (Personally I've set it to 60)
 
 #Do not change!
 path=$@ #Get the Path of the Config File
