@@ -11,7 +11,11 @@
 # created by RaPiiDe
 # modified by ManuVice
 
-remotePath="PathToYourHyperion-remote"
+# Commit https://github.com/hyperion-project/hyperion.ng/commit/ad293b2fb623fcabdc39ffc7192f38761eb35b9b
+# IPv4+6 Support added. Now you have to set a Remote IP with parameter -a
+# Default 127.0.0.1
+
+remotePath="/bin/hyperion-remote -a 127.0.0.1"
 isOn=-1
 
 while :
