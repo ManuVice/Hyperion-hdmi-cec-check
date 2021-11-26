@@ -5,6 +5,7 @@
 - Tested with Hyperion.ng #5eb45e857fd12f96979d03e80e4dd1ee86a096c4 (https://github.com/hyperion-project/hyperion.ng) and Raspbian Buster  
 
 ## Requirements:
-- libCEC (https://github.com/Pulse-Eight/libcec)
+- libCEC
+- cec-utils
 - Hyperion.ng
 - Hyperion-Remote (included in every release of Hyperion.ng)
